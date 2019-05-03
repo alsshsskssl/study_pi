@@ -9,7 +9,7 @@ int main(){
   int i;	
   if(wiringPiSetup() == -1)
  	  return 1;
-  pinMode (LED1, PWM_OUTPUT);
+  pinMode (LED1, OUTPUT);
   pinMode (LED2, PWM_OUTPUT);
 
   scanf("%d %d %d",&led,&hz,&bright);
